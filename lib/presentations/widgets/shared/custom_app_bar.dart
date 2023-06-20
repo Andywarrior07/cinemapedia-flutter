@@ -10,7 +10,6 @@ class CustomAppBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final colors = Theme.of(context).colorScheme;
     final titleStyle = Theme.of(context).textTheme.titleMedium;
 
     return SafeArea(
@@ -24,7 +23,7 @@ class CustomAppBar extends ConsumerWidget {
               const SizedBox(
                 height: 45,
               ),
-              Icon(Icons.movie_creation_outlined, color: colors.primary),
+              const Icon(Icons.movie_creation_outlined, color: Colors.amber),
               const SizedBox(
                 width: 5,
               ),
